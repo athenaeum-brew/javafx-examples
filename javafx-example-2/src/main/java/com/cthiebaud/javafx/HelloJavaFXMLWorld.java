@@ -8,9 +8,6 @@ import javafx.stage.Stage;
 
 import java.io.IOException;
 
-/**
- * JavaFX App
- */
 public class HelloJavaFXMLWorld extends Application {
 
     private static Scene scene;

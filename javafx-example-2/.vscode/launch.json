@@ -3,11 +3,30 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HelloJavaFXMLWorld",
+            "request": "launch",
+            "mainClass": "com.cthiebaud.javafx/com.cthiebaud.javafx.HelloJavaFXMLWorld",
+            "projectName": "javafx-example-2"
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "HelloJavaFXMLWorld",
+            "request": "launch",
+            "mainClass": "com.cthiebaud.javafx/com.cthiebaud.javafx.HelloJavaFXMLWorld",
+            "projectName": "demo"
+        },
+        {
+            "type": "java",
             "name": "Debug (Attach)",
             "request": "attach",
             "hostName": "localhost",
             "port": 8000
-          }
-      
+        }
     ]
 }

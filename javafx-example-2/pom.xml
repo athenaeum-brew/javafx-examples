@@ -42,6 +42,27 @@
                             <mainClass>com.cthiebaud.javafx.HelloJavaFXMLWorld</mainClass>
                         </configuration>
                     </execution>
+                    <execution>
+                        <!-- Configuration for manual attach debugging -->
+                        <!-- Usage: mvn clean javafx:run@debug -->
+                        <id>debug</id>
+                        <configuration>
+                            <options>
+                                <option>-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=localhost:8000</option>
+                            </options>
+                            <mainClass>com.cthiebaud.javafx/com.cthiebaud.javafx.HelloJavaFXMLWorld</mainClass>
+                        </configuration>
+                    </execution>
+                    <execution>
+                        <!-- Configuration for automatic IDE debugging -->
+                        <id>ide-debug</id>
+                        <configuration>
+                            <options>
+                                <option>-agentlib:jdwp=transport=dt_socket,server=n,address=${jpda.address}</option>
+                            </options>
+                            <mainClass>com.cthiebaud.javafx/com.cthiebaud.javafx.HelloJavaFXMLWorld</mainClass>
+                        </configuration>
+                    </execution>
                 </executions>
             </plugin>
         </plugins>
