@@ -36,7 +36,7 @@
                     <execution>
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.cthiebaud.javafx.App</mainClass>
+                            <mainClass>com.cthiebaud.javafx.HelloJavaFXWorld</mainClass>
                         </configuration>
                     </execution>
                 </executions>
