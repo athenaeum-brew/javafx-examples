@@ -21,12 +21,12 @@ public class HelloJavaFXWorld extends Application {
      */
     @Override
     public void start(Stage stage) {
-        // Retrieve system information
-        String javaVersion = SystemInfo.javaVersion();
-        String javafxVersion = SystemInfo.javafxVersion();
+        stage.setTitle(this.getClass().getSimpleName());
 
         // Create a label displaying JavaFX and Java version information
-        Label label = new Label("Hello, JavaFX " + javafxVersion + ", running on Java " + javaVersion + ".");
+        Label label = new Label(String.format("Hello, JavaFX %s, running on Java %s.",
+                SystemInfo.javafxVersion(),
+                SystemInfo.javaVersion()));
         StackPane pane = new StackPane(label);
 
         // Retrieve primary screen information
