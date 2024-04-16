@@ -15,7 +15,7 @@
             "name": "HelloJavaFXWebViewWorld",
             "request": "launch",
             "mainClass": "com.cthiebaud.javafx/com.cthiebaud.javafx.HelloJavaFXWebViewWorld",
-            "projectName": "javafx-example"
+            "projectName": "javafx-example-3-hellowebviewworld"
         }
     ]
 }

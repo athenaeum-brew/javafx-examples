@@ -1,4 +1,4 @@
-package com.cthiebaud.ui;
+package com.cthiebaud.javafx;
 
 import javafx.scene.image.Image;
 

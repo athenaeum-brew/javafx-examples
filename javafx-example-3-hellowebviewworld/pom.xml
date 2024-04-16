@@ -3,7 +3,7 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.cthiebaud.javafx</groupId>
-    <artifactId>javafx-example</artifactId>
+    <artifactId>javafx-example-3-hellowebviewworld</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -15,6 +15,11 @@
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
+            <version>22</version>
+        </dependency>
+        <dependency>
+            <groupId>org.openjfx</groupId>
+            <artifactId>javafx-web</artifactId>
             <version>22</version>
         </dependency>
     </dependencies>
@@ -36,7 +41,7 @@
                     <execution>
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.cthiebaud.javafx.HelloJavaFXWorld</mainClass>
+                            <mainClass>com.cthiebaud.javafx.HelloJavaFXWebViewWorld</mainClass>
                         </configuration>
                     </execution>
                 </executions>

@@ -6,7 +6,7 @@
             "name": "HelloJavaFXMLWorld",
             "request": "launch",
             "mainClass": "com.cthiebaud.javafx/com.cthiebaud.javafx.HelloJavaFXMLWorld",
-            "projectName": "javafx-example-2"
+            "projectName": "javafx-example-2-hellofxmlworld"
         },
         {
             "type": "java",

@@ -1,4 +1,4 @@
-module com.cthiebaud.ui {
+module com.cthiebaud.javafx {
     requires javafx.controls;
     requires transitive javafx.graphics;
     requires transitive com.cthiebaud.mythos;
@@ -6,7 +6,7 @@ module com.cthiebaud.ui {
     requires transitive org.apache.httpcomponents.httpclient;
     requires javafx.base;
 
-    opens com.cthiebaud.ui to javafx.graphics;
+    opens com.cthiebaud.javafx to javafx.graphics;
 
-    exports com.cthiebaud.ui;
+    exports com.cthiebaud.javafx;
 }

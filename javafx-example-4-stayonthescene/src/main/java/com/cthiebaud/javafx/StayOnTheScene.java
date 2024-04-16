@@ -1,4 +1,4 @@
-package com.cthiebaud.ui;
+package com.cthiebaud.javafx;
 
 import static com.cthiebaud.mythos.model.Model.MODEL;
 

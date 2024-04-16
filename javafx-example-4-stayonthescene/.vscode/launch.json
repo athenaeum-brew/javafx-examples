@@ -11,7 +11,7 @@
             "type": "java",
             "name": "StayOnTheScene",
             "request": "launch",
-            "mainClass": "com.cthiebaud.ui/com.cthiebaud.ui.StayOnTheScene",
+            "mainClass": "com.cthiebaud.javafx/com.cthiebaud.javafx.StayOnTheScene",
         },
         {
             "type": "java",
