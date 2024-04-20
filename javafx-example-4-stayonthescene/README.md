@@ -11,7 +11,7 @@ In pom.xml, add the following xml snippet to javafx-maven-plugin ```<executions>
         <options>
             <option>-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=localhost:8000</option>
         </options>
-        <mainClass>com.example.App</mainClass>
+        <mainClass>com.cthiebaud.javafx/com.cthiebaud.javafx.StayOnTheScene</mainClass>
     </configuration>
 </execution>
 ```
