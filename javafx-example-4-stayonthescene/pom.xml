@@ -73,8 +73,8 @@
                     </execution>
                     <execution>
                         <!-- Configuration for manual attach debugging -->
-                        <!-- Usage: mvn clean javafx:run@debug -->
-                        <id>debug</id>
+                        <!-- Usage: mvn clean javafx:run@my-debug-id -->
+                        <id>my-debug-id</id>
                         <configuration>
                             <options>
                                 <option>-agentlib:jdwp=transport=dt_socket,server=y,suspend=y,address=localhost:8000</option>
