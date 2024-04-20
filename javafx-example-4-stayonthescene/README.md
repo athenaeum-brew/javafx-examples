@@ -1,5 +1,3 @@
-#  Exercises - Graphical User Interface 
-
 #### Debug the program from the command line with maven
 
 In pom.xml, add the following xml snippet to javafx-maven-plugin ```<executions>```:
