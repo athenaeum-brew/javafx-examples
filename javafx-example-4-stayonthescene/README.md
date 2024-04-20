@@ -37,6 +37,3 @@ Open a terminal, type ```mvn javafx:run@my-debug-id```
 
 In Visual Studio, run "Debug (Attach)" from "Run and Debug" (⇧⌘D)
 
-Full Sample at https://github.com/athenaeum-brew/javafx-examples/tree/main/javafx-example-4-stayonthescene
-
-<img src="/images/29115.svg" alt="separator" class="frise">
