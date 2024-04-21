@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HelloJavaFXWebEngineWorld",
+            "request": "launch",
+            "mainClass": "com.cthiebaud.javafx/com.cthiebaud.javafx.HelloJavaFXWebEngineWorld",
+            "projectName": "javafx-example-3"
+        },
+        {
+            "type": "java",
             "name": "AccordionWebViewExample",
             "request": "launch",
             "mainClass": "com.cthiebaud.javafx/com.cthiebaud.javafx.AccordionWebViewExample",

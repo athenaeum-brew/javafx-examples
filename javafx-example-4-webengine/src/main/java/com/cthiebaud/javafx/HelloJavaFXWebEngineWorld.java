@@ -27,11 +27,6 @@ public class HelloJavaFXWebEngineWorld extends Application {
         WebView webView = new WebView();
         webEngine = webView.getEngine();
 
-        // Load HTML content from file using HTMLContentGenerator
-        // String htmlContent =
-        // ContentLoader.loadHTMLContentFromClasspath("/ui/content.html");
-        String htmlContent = ContentLoader.loadHTMLContentFromFile("webroot/template.html");
-
         // Inject Java object into JavaScript context
         webEngine.getLoadWorker().stateProperty().addListener((observable, oldValue, newValue) -> {
             if (Worker.State.SUCCEEDED == newValue) {
@@ -40,6 +35,8 @@ public class HelloJavaFXWebEngineWorld extends Application {
             }
         });
 
+        // Load HTML content from file
+        String htmlContent = ContentLoader.loadHTMLContentFromFile("webroot/template.html");
         webEngine.loadContent(htmlContent);
 
         // Create a Scene with the WebView
@@ -56,11 +53,13 @@ public class HelloJavaFXWebEngineWorld extends Application {
             System.out.println("Message from JavaScript: " + message);
             int x = Integer.parseInt(message);
 
-            // waitThenAnswer(x);
-
-            Thread messageThread = new Thread(new MessageSender(x));
-            messageThread.start();
-
+            boolean async = true;
+            if (!async) {
+                waitThenAnswer(x);
+            } else {
+                Thread messageThread = new Thread(new MessageSender(x));
+                messageThread.start();
+            }
             return;
         }
     }

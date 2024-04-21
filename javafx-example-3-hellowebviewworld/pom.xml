@@ -46,6 +46,28 @@
                     </execution>
                 </executions>
             </plugin>
+            <!-- Configure maven-assembly-plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>3.7.1</version>
+                <configuration>
+                    <descriptorRefs>
+                        <!-- Reference the predefined assembly descriptor 'src' -->
+                        <descriptorRef>project</descriptorRef>
+                    </descriptorRefs>
+                </configuration>
+                <executions>
+                    <!-- Bind the plugin execution to the 'package' phase -->
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 </project>
