@@ -39,22 +39,22 @@ public class HelloJavaFXWebViewWorld extends Application {
         });
 
         // Load a webpage
-        String htmlContent;
-        try {
-            htmlContent = new String(Files.readAllBytes(Paths.get(getClass().getResource("/sample.html").toURI())));
-            webView.getEngine().load("https://aequologica.net/");
-            // webView.getEngine().loadContent(htmlContent);
-        } catch (IOException | URISyntaxException | NullPointerException exception) {
+        // String htmlContent;
+        // try {
+        // htmlContent = new
+        // String(Files.readAllBytes(Paths.get(getClass().getResource("/sample.html").toURI())));
+        // // webView.getEngine().loadContent(htmlContent);
+        // } catch (IOException | URISyntaxException | NullPointerException exception) {
+        // // Convert the exception stack trace to a string
+        // StringWriter sw = new StringWriter();
+        // PrintWriter pw = new PrintWriter(sw);
+        // exception.printStackTrace(pw);
+        // String stackTrace = sw.toString();
+        // // Display the error stack trace in the browser
+        // webView.getEngine().loadContent("<pre>" + stackTrace + "</pre>");
+        // }
 
-            // Convert the exception stack trace to a string
-            StringWriter sw = new StringWriter();
-            PrintWriter pw = new PrintWriter(sw);
-            exception.printStackTrace(pw);
-            String stackTrace = sw.toString();
-
-            // Display the error stack trace in the browser
-            webView.getEngine().loadContent("<pre>" + stackTrace + "</pre>");
-        }
+        webView.getEngine().load("https://aletheia.cthiebaud.com/");
 
         // Retrieve primary screen information
         Screen screen = Screen.getPrimary();

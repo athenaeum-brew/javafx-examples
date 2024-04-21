@@ -4,9 +4,6 @@ import static com.cthiebaud.mythos.model.Model.MODEL;
 
 import com.cthiebaud.mythos.model.Model.Actor;
 
-import java.util.LinkedHashMap;
-import java.util.Map;
-
 import javafx.application.Application;
 import javafx.beans.Observable;
 import javafx.beans.property.SimpleStringProperty;
@@ -23,10 +20,6 @@ import javafx.scene.text.TextFlow;
 import javafx.stage.Stage;
 import javafx.util.Callback;
 
-/**
- * https://github.com/Apress/definitive-guide-modern-java-clients-javafx17/blob/master/ch02-JavafxFundamentals/personui/src/main/java/org/modernclient/model/Person.java
- */
-
 public class StayOnTheScene extends Application {
 
     private SplitPane splitPane;
@@ -38,10 +31,11 @@ public class StayOnTheScene extends Application {
             new SimpleStringProperty(p, "name", p.getName()),
             new SimpleStringProperty(p, "description", p.getDescription())
     };
-    private final ObservableList<Actor> actorList = FXCollections.observableArrayList(extractor);
+    private final ObservableList<Actor> actorList = FXCollections
+            .observableArrayList(extractor);
 
     /*
-     * private final ObservableList<com.cthiebaud.mythos.model.Model.Actor>
+     * private final ObservableList<Actor>
      * actorList = FXCollections
      * .observableArrayList(p -> new Observable[] { p.getName(), p.getDescription()
      * });
@@ -51,12 +45,6 @@ public class StayOnTheScene extends Application {
 
         // Set the title of the main window
         primaryStage.setTitle(this.getClass().getSimpleName());
-
-        // Sample data for demonstration
-        // data.put("Boy", "petit_cropped_square.jpg");
-        // data.put("Student", "student_cropped.jpg");
-        // data.put("Now", "marriage_matilde_cropped.jpg");
-        // data.put("The Later The Better", "8c9426e8ff0fc7a0a7cd18d6b3c865d4.png");
 
         actorList.addAll(MODEL.actorList());
 

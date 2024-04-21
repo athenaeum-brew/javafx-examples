@@ -9,6 +9,7 @@
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.java>22</maven.compiler.java>
         <maven.compiler.source>22</maven.compiler.source>
         <maven.compiler.target>22</maven.compiler.target>
     </properties>
@@ -46,7 +47,7 @@
         <dependency>
             <groupId>com.cthiebaud.mythos</groupId>
             <artifactId>mythos</artifactId>
-            <version>1.0.0</version>        
+            <version>1.0.2</version>        
         </dependency>
     </dependencies>
 

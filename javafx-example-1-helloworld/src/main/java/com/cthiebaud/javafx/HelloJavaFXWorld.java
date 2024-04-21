@@ -8,55 +8,26 @@ import javafx.scene.layout.StackPane;
 import javafx.stage.Screen;
 import javafx.stage.Stage;
 
-/**
- * The main application class.
- */
 public class HelloJavaFXWorld extends Application {
 
-    /**
-     * The entry point for the JavaFX application.
-     *
-     * @param stage The primary stage for this application, onto which the
-     *              application scene can be set.
-     */
     @Override
     public void start(Stage stage) {
         stage.setTitle(this.getClass().getSimpleName());
 
-        // Create a label displaying JavaFX and Java version information
         Label label = new Label(String.format("Hello, JavaFX %s, running on Java %s.",
-                SystemInfo.javafxVersion(),
-                SystemInfo.javaVersion()));
+                System.getProperty("java.version"),
+                System.getProperty("javafx.version")));
         StackPane pane = new StackPane(label);
 
-        // Retrieve primary screen information
         Screen screen = Screen.getPrimary();
         Rectangle2D bounds = screen.getVisualBounds();
 
-        // Create a scene and set it to the stage
         Scene scene = new Scene(pane, bounds.getWidth(), bounds.getHeight());
         stage.setScene(scene);
         stage.show();
     }
 
-    /**
-     * The main method, launching the JavaFX application.
-     *
-     * @param args Command line arguments.
-     */
     public static void main(String[] args) {
         launch();
-    }
-
-    class SystemInfo {
-
-        public static String javaVersion() {
-            return System.getProperty("java.version");
-        }
-
-        public static String javafxVersion() {
-            return System.getProperty("javafx.version");
-        }
-
     }
 }
