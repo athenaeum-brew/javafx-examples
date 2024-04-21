@@ -1,5 +1,7 @@
 package com.cthiebaud.javafx;
 
+import java.net.URL;
+
 import javafx.application.Application;
 import javafx.concurrent.Worker;
 import javafx.geometry.Rectangle2D;
@@ -31,6 +33,13 @@ public class HelloJavaFXWebViewWorld extends Application {
             }
         });
 
+        // 1. loading from a String variable
+        // webView.getEngine().loadContent("Hello");
+
+        // 2. loading from a file in the classpath
+        // webView.getEngine().load(getClass().getResource("/sample.html").toExternalForm());
+
+        // 3. loading an external URL
         webView.getEngine().load("https://google.com");
 
         // Retrieve primary screen information
