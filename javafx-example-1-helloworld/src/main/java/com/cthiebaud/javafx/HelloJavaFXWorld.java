@@ -15,8 +15,9 @@ public class HelloJavaFXWorld extends Application {
         stage.setTitle(this.getClass().getSimpleName());
 
         Label label = new Label(String.format("Hello, JavaFX %s, running on Java %s.",
-                System.getProperty("java.version"),
-                System.getProperty("javafx.version")));
+                System.getProperty("javafx.version"), //
+                System.getProperty("java.version") //
+        ));
         StackPane pane = new StackPane(label);
 
         Screen screen = Screen.getPrimary();
