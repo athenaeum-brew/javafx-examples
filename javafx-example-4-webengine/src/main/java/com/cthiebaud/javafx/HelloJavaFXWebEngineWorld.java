@@ -32,9 +32,6 @@ public class HelloJavaFXWebEngineWorld extends Application {
         // ContentLoader.loadHTMLContentFromClasspath("/ui/content.html");
         String htmlContent = ContentLoader.loadHTMLContentFromFile("webroot/template.html");
 
-        // Create an instance of the model
-        Message model = new Message("Hello, Thymeleaf!");
-
         // Inject Java object into JavaScript context
         webEngine.getLoadWorker().stateProperty().addListener((observable, oldValue, newValue) -> {
             if (Worker.State.SUCCEEDED == newValue) {
@@ -43,9 +40,7 @@ public class HelloJavaFXWebEngineWorld extends Application {
             }
         });
 
-        String processedTemplate = ThymeleafTemplateProcessor.processTemplate(htmlContent, model);
-
-        webEngine.loadContent(processedTemplate);
+        webEngine.loadContent(htmlContent);
 
         // Create a Scene with the WebView
         Scene scene = new Scene(webView, 800, 600);

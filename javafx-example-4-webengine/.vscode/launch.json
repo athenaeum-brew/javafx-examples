@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "AccordionWebViewExample",
+            "request": "launch",
+            "mainClass": "com.cthiebaud.javafx/com.cthiebaud.javafx.AccordionWebViewExample",
+            "projectName": "javafx-example-3"
+        },
+        {
+            "type": "java",
+            "name": "WebViewMouseWheelZoomExample",
+            "request": "launch",
+            "mainClass": "com.cthiebaud.javafx/com.cthiebaud.javafx.WebViewMouseWheelZoomExample",
+            "projectName": "javafx-example-3"
+        },
+        {
+            "type": "java",
+            "name": "WebViewExample",
+            "request": "launch",
+            "mainClass": "com.cthiebaud.javafx/com.cthiebaud.javafx.WebViewExample",
+            "projectName": "javafx-example-3"
+        },
+        {
+            "type": "java",
+            "name": "ColorPickerExample",
+            "request": "launch",
+            "mainClass": "com.cthiebaud.javafx/com.cthiebaud.javafx.ColorPickerExample",
+            "projectName": "javafx-example-3"
+        },
+        {
+            "type": "java",
             "name": "HelloJavaFXWebEngineWorld",
             "request": "launch",
             "mainClass": "com.cthiebaud.javafx/com.cthiebaud.javafx.HelloJavaFXWebEngineWorld",

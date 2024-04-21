@@ -18,7 +18,7 @@ import javafx.stage.Stage;
  * 
  * @author Dustin
  */
-public class WebViewExample extends Application {
+public class AccordionWebViewExample extends Application {
     /**
      * Provide an instance of a JavaFX 2.0 Accordion control with each titled
      * pane in the Accordion featuring a title based on a 'key' value in the
