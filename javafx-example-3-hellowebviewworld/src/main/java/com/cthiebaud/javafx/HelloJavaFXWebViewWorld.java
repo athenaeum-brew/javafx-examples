@@ -1,12 +1,5 @@
 package com.cthiebaud.javafx;
 
-import java.io.IOException;
-import java.io.PrintWriter;
-import java.io.StringWriter;
-import java.net.URISyntaxException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-
 import javafx.application.Application;
 import javafx.concurrent.Worker;
 import javafx.geometry.Rectangle2D;
@@ -38,23 +31,7 @@ public class HelloJavaFXWebViewWorld extends Application {
             }
         });
 
-        // Load a webpage
-        // String htmlContent;
-        // try {
-        // htmlContent = new
-        // String(Files.readAllBytes(Paths.get(getClass().getResource("/sample.html").toURI())));
-        // // webView.getEngine().loadContent(htmlContent);
-        // } catch (IOException | URISyntaxException | NullPointerException exception) {
-        // // Convert the exception stack trace to a string
-        // StringWriter sw = new StringWriter();
-        // PrintWriter pw = new PrintWriter(sw);
-        // exception.printStackTrace(pw);
-        // String stackTrace = sw.toString();
-        // // Display the error stack trace in the browser
-        // webView.getEngine().loadContent("<pre>" + stackTrace + "</pre>");
-        // }
-
-        webView.getEngine().load("https://aletheia.cthiebaud.com/");
+        webView.getEngine().load("https://google.com");
 
         // Retrieve primary screen information
         Screen screen = Screen.getPrimary();
